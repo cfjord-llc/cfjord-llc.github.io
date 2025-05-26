@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - C Fjord</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/images/fjord.png" alt="Fjord landscape" class="header-bg">
+            <div class="header-content">
+                <div class="logo" style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">
+                    C Fjord
+                </div>
+                <div class="tagline">Bridge Divides Between Innovative Technology and Human Potential</div>
+                <a href="contact.html" class="header-cta">Connect With Us</a>
+            </div>
+        </header>
+
+        <nav>
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <span class="nav-logo-img">
+                        <img src="assets/images/logo-n.png" alt="C Fjord Logo">
+                    </span>
+                </a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <div class="nav-links">
+                    <button class="close-menu-btn" onclick="toggleMenu()">✕</button>
+                    <a href="index.html" class="nav-btn">Home</a>
+                    <a href="about.html" class="nav-btn">About</a>
+                    <a href="services.html" class="nav-btn">Services</a>
+                    <a href="contact.html" class="nav-btn active">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h1>Let's Connect</h1>
+                    <div class="subtitle">I'm excited to hear about your organization and how we might work together</div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="email-section">
+                        <div class="email-heading">The best way to reach me:</div>
+                        <div class="email-container">
+                            <a href="mailto:chris@cfjord.com" class="email-link">chris@cfjord.com</a>
+                        </div>
+                        <div class="contact-cta">
+                            I typically respond within 1-2 business days and look forward to our conversation.
+                        </div>
+                    </div>
+                    
+                    <!-- Single highlight box (removed approach box) -->
+                    <div class="highlight-box">
+                        <div class="box-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="box-content">
+                            <h3>Initial Consultation</h3>
+                            <p>All new inquiries begin with a complimentary discovery call to understand your specific needs and determine how C Fjord can best support your organization.</p>
+                        </div>
+                    </div>
+                    
+                    <!--
+                    <div class="contact-message">
+                        <p>Thank you for your interest in C Fjord. I'm always excited to connect with organizations looking to navigate the evolving landscape of AI and technology implementation.</p>
+                        
+                        <p>Whether you have questions about my services, want to discuss a potential collaboration, or simply wish to learn more about human-centered AI approaches, I'd be delighted to hear from you.</p>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-logo-img">
+                        <img src="assets/images/logo-n.png" alt="C Fjord Logo">
+                    </div>
+                    C Fjord
+                </div>
+                <p>Bridging Technology and Human Potential</p>
+                <p class="copyright">© 2025 C Fjord Consulting. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

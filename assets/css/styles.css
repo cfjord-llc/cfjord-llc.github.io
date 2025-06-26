@@ -1864,6 +1864,334 @@ nav {
     }
 }
 
+/* ====== BLOG STYLES ====== */
+/* Blog Post Layout Improvements - WITH PROPER SCOPING */
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Scope all blog styles to only affect content within the blog-post container */
+.blog-body {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.blog-body h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-body h2 {
+    font-size: 1.9rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2a5885;
+}
+
+.blog-body h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.blog-body p {
+    margin-bottom: 1.5rem;
+}
+
+.blog-body blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-left: 4px solid #2a5885;
+    background-color: #f8f9fa;
+    font-style: italic;
+    font-size: 1.15rem;
+}
+
+/* Enhanced blog meta styling */
+.blog-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3a7bd5;
+    border-radius: 3px;
+}
+
+.blog-date {
+    font-weight: 600;
+    color: #3a7bd5;
+    display: flex;
+    align-items: center;
+}
+
+.blog-date::before {
+    content: "\f073";
+    font-family: "Font Awesome 6 Free";
+    margin-right: 0.5rem;
+    font-weight: 900;
+}
+
+.blog-author {
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.blog-author::before {
+    content: "\f007";
+    font-family: "Font Awesome 6 Free";
+    margin-right: 0.5rem;
+    font-weight: 900;
+}
+
+/* Enhanced bullet point styling */
+.blog-body ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-body ul li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 0.5rem;
+}
+
+.blog-body ul li::marker {
+    color: #3a7bd5;
+    font-size: 1.2em;
+}
+
+/* For better spacing in blockquotes */
+.blog-body blockquote {
+    border-left: 4px solid #3a7bd5;
+    padding: 0.5rem 1rem;
+    margin: 1.5rem 0;
+    background-color: #f8f9fa;
+    font-style: italic;
+}
+
+/* Enhanced Back to Blog button styling */
+.blog-navigation {
+    margin: 1.5rem 0;
+}
+
+.back-to-blog {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.7rem 1.2rem;
+    background-color: #f8f9fa;
+    color: #3a7bd5;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    border-left: 3px solid #3a7bd5;
+    transition: all 0.3s ease;
+}
+
+.back-to-blog:hover {
+    background-color: #e9f0fe;
+    transform: translateX(-3px);
+    box-shadow: 0 3px 8px rgba(58, 123, 213, 0.15);
+}
+
+.back-to-blog i {
+    margin-right: 0.8rem;
+    font-size: 0.9rem;
+    transition: transform 0.2s ease;
+}
+
+.back-to-blog:hover i {
+    transform: translateX(-3px);
+}
+
+/* Enhanced Blog Card Styling */
+.blog-grid {
+    grid-gap: 2rem;
+}
+
+.blog-card {
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    border-top: 4px solid transparent;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Category styling with color coding */
+.blog-card[data-category="Training"] {
+    border-top-color: #3498db;
+}
+
+.blog-card[data-category="Workplace Culture"] {
+    border-top-color: #9b59b6;
+}
+
+.blog-card[data-category="AI Integration"] {
+    border-top-color: #2ecc71;
+}
+
+.blog-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.blog-category {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    margin-bottom: 0.8rem;
+}
+
+/* Category tag styling */
+.blog-card[data-category="Training"] .blog-category {
+    background-color: rgba(52, 152, 219, 0.1);
+    color: #3498db;
+}
+
+.blog-card[data-category="Workplace Culture"] .blog-category {
+    background-color: rgba(155, 89, 182, 0.1);
+    color: #9b59b6;
+}
+
+.blog-card[data-category="AI Integration"] .blog-category {
+    background-color: rgba(46, 204, 113, 0.1);
+    color: #2ecc71;
+}
+
+.blog-date {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 0.8rem;
+    font-style: italic;
+}
+
+.blog-card h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    flex-grow: 0;
+}
+
+.blog-card p {
+    flex-grow: 1;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.blog-read-more {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s;
+    margin-top: auto;
+}
+
+.blog-read-more:hover {
+    color: #3498db;
+}
+
+.blog-read-more i {
+    margin-left: 5px;
+    transition: transform 0.2s;
+}
+
+.blog-read-more:hover i {
+    transform: translateX(3px);
+}
+
+/* ====== BLOG FILTER STYLES ====== */
+/* Blog filter styling */
+.blog-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    background: #f5f5f5;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 30px;
+    color: #555;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: #e8e8e8;
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: #3498db;
+    color: white;
+    box-shadow: 0 3px 8px rgba(52, 152, 219, 0.2);
+}
+
+/* Category-specific filter buttons */
+.filter-btn[data-filter="Training"] {
+    border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+.filter-btn[data-filter="Training"].active {
+    background: #3498db;
+}
+
+.filter-btn[data-filter="Workplace Culture"] {
+    border: 1px solid rgba(155, 89, 182, 0.3);
+}
+
+.filter-btn[data-filter="Workplace Culture"].active {
+    background: #9b59b6;
+}
+
+.filter-btn[data-filter="AI Integration"] {
+    border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.filter-btn[data-filter="AI Integration"].active {
+    background: #2ecc71;
+}
+
+/* Animation for blog cards when filtering */
+.blog-card {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.blog-card.hidden {
+    display: none;
+}
+
 /* ====== FOOTER ====== */
 footer {
     background: var(--dark);
@@ -1921,4 +2249,50 @@ footer {
     justify-content: center;
     gap: 0.5rem;
     margin-bottom: 0.5rem;
+}
+
+/* Blog contact section styling */
+.blog-contact {
+    margin: 3rem 0 1.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f5f9ff, #e8f0fe);
+    border-left: 4px solid #3498db;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.blog-contact p {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.blog-contact a {
+    color: #3498db;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.blog-contact a:hover {
+    color: #2176c1;
+}
+
+.blog-contact a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #2176c1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.blog-contact a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }

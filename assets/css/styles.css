@@ -2636,7 +2636,6 @@ footer {
     border: 2px solid #e2e8f0;
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    margin: 1rem 0;
 }
 
 .back-to-blog:hover, .back-to-blog:focus {
@@ -2667,10 +2666,29 @@ footer {
     border-top: 1px solid #e2e8f0;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .back-to-blog {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
-    }
+/* Personal website button styling */
+.personal-site-btn {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.personal-link-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+}
+
+.personal-link-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+}
+
+.personal-link-btn i {
+    margin-right: 8px;
 }

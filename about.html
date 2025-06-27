@@ -3,33 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - C Fjord</title>
+    <title>About Dr. Christopher Flathmann | Human-AI Integration Expert | C Fjord</title>
+    <meta name="description" content="Meet Dr. Christopher Flathmann, founder of C Fjord and expert in human-centered AI integration with over 40+ publications and $4M+ in research funding.">
+    <meta name="keywords" content="Christopher Flathmann, C Fjord founder, human-AI interaction expert, AI integration consultant, human-centered computing">
+    <link rel="canonical" href="https://cfjord.com/about.html">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://cfjord.com/about.html">
+    <meta property="og:title" content="About Dr. Christopher Flathmann | C Fjord">
+    <meta property="og:description" content="Meet Dr. Christopher Flathmann, founder of C Fjord and expert in human-centered AI integration with over 40+ publications and $4M+ in research funding.">
+    <meta property="og:image" content="https://cfjord.com/assets/images/about-og.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cfjord.com/about.html">
+    <meta property="twitter:title" content="About Dr. Christopher Flathmann | C Fjord">
+    <meta property="twitter:description" content="Meet Dr. Christopher Flathmann, founder of C Fjord and expert in human-centered AI integration with over 40+ publications and $4M+ in research funding.">
+    <meta property="twitter:image" content="https://cfjord.com/assets/images/about-og.png">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dr. Christopher Flathmann",
+      "jobTitle": "Founder and AI Integration Consultant",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "C Fjord",
+        "url": "https://cfjord.com"
+      },
+      "url": "https://cfjord.com/about.html",
+      "image": "https://cfjord.com/assets/images/square.jpg",
+      "description": "Human-centered AI integration expert, focusing on bridging technology with human potential in organizations.",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Clemson University"
+      },
+      "knowsAbout": ["Human-AI Interaction", "AI Technology Design", "AI Acceptance", "Workforce Development", "Technology Integration"]
+    }
+    </script>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="assets/images/fjord.png" alt="Fjord landscape" class="header-bg">
+            <img src="assets/images/fjord.png" alt="Mountain fjord landscape symbolizing bridging technological divides" class="header-bg">
             <div class="header-content">
                 <div class="logo" style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">
                     C Fjord
                 </div>
                 <div class="tagline">Bridge Divides Between Innovative Technology and Human Potential</div>
-                <a href="contact.html" class="header-cta">Connect With Us</a>
+                <a href="contact.html" class="header-cta" aria-label="Connect With Us">Connect With Us</a>
             </div>
         </header>
 
-        <nav>
+        <nav aria-label="Main Navigation">
             <div class="nav-container">
-                <a href="index.html" class="nav-logo">
+                <a href="index.html" class="nav-logo" aria-label="C Fjord Home">
                     <span class="nav-logo-img">
-                        <img src="assets/images/logo-n.svg" alt="C Fjord Logo">
+                        <img src="assets/images/logo-n.svg" alt="C Fjord Logo - Bridging technology and human potential">
                     </span>
                 </a>
-                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-                <div class="nav-links">
-                    <button class="close-menu-btn" onclick="toggleMenu()">✕</button>
+                <button class="mobile-menu-btn" onclick="toggleMenu()" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">☰</button>
+                <div class="nav-links" id="nav-links">
+                    <button class="close-menu-btn" onclick="toggleMenu()" aria-label="Close navigation menu">✕</button>
                     <a href="index.html" class="nav-btn">Home</a>
                     <a href="about.html" class="nav-btn active">About</a>
                     <a href="services.html" class="nav-btn">Services</a>
@@ -39,22 +80,24 @@
             </div>
         </nav>
 
-        <div class="content">
+        <main class="content">
             <!-- ABOUT PAGE -->
             <div id="about" class="page active">
-                <div class="section-heading">
-                    <h1>About Christopher Flathmann - Founder</h1>
-                </div>
+                <section class="about-header-section">
+                    <div class="section-heading">
+                        <h1>About Dr. Christopher Flathmann - Founder</h1>
+                    </div>
+                </section>
                 
-                <div class="about-section">
+                <section class="about-section">
                     <div class="left-column">
                         <div class="profile-image">
-                            <img src="assets/images/square.jpg" alt="Christopher Flathmann">
+                            <img src="assets/images/square.jpg" alt="Dr. Christopher Flathmann, founder of C Fjord and expert in human-AI integration" loading="lazy">
                         </div>
                         
                         <div class="academic-stats-widget">
                             <div class="stats-header">
-                                <h3 class="stats-title">Academic Career</h3>
+                                <h2 class="stats-title">Academic Career</h2>
                                 <p class="stats-subtitle">Personal Accomplishments & Research Impact</p>
                             </div>
                 
@@ -96,43 +139,96 @@
                         </div>
                         
                         <div class="about-timeline">
-                            <div class="timeline-item">
+                            <article class="timeline-item">
                                 <h2>Foundation in Research</h2>
                                 <p>My journey currently has me in academia, serving as an assistant professor where I specialized in critical areas like human-AI interaction, AI technology design, AI acceptance, and broader technology integration. This academic foundation allowed me to dive deep into the theoretical underpinnings and emerging trends of AI, but it was the opportunity to apply these concepts across a vast array of real-world scenarios that truly shaped my perspective.</p>
-                            </div>
+                            </article>
                             
-                            <div class="timeline-item">
+                            <article class="timeline-item">
                                 <h2>Real-World Experience</h2>
                                 <p>I've been fortunate to explore these ideas firsthand in contexts as varied as manufacturing to software development, emergency response, education, agriculture, and much more. These experiences consistently revealed a common thread: the gap between groundbreaking technology and an organization's ability to seamlessly adopt and leverage it has only grown with the introduction of AI.</p>
                                 <p>Through partnerships with industry leaders and government agencies, I've had the opportunity to translate research findings into practical solutions that address real organizational challenges. This blend of academic rigor and practical application has been instrumental in developing frameworks that truly work in the field.</p>
-                            </div>
+                            </article>
                             
-                            <div class="timeline-item">
+                            <article class="timeline-item">
                                 <h2>My Passions and Goals</h2>
                                 <p>My passion is to see the direct impacts of these solutions—how they empower workforces, optimize processes, and unlock new possibilities. C Fjord exists to be that hands-on partner, guiding organizations through technological transitions with a human-centered approach.</p>
                                 <p>I believe that successful AI integration isn't just about technology implementation—it's about aligning these powerful tools with human needs, organizational cultures, and strategic objectives. By bridging this divide, we can create technology implementations that people actually want to use and that deliver measurable value.</p>
-                            </div>
+                            </article>
                             
-                            <div class="timeline-item">
+                            <article class="timeline-item">
                                 <h2>The C Fjord Approach</h2>
                                 <p>At C Fjord, we take a fundamentally different approach to AI consulting. Instead of starting with technology and forcing organizational adaptation, we begin with a deep understanding of your people, processes, and objectives. This human-centered methodology ensures that the technological solutions we implement are not only cutting-edge but also contextually appropriate and sustainably valuable.</p>
                                 <p>Through tailored training programs, strategic consulting, and hands-on implementation support, we help organizations navigate the complexities of AI adoption while maintaining focus on what truly matters: empowering your people to achieve extraordinary results.</p>
-                            </div>
+                            </article>
                         </div>
                     </div>
-                </div>
+                </section>
+
+                <section class="expertise-areas">
+                    <h2>Areas of Expertise</h2>
+                    <div class="expertise-grid">
+                        <article class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-robot" aria-hidden="true"></i>
+                            </div>
+                            <h3>Human-AI Interaction</h3>
+                            <p>Research and application of interface design principles that create intuitive, effective interactions between humans and AI systems.</p>
+                        </article>
+                        
+                        <article class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-cogs" aria-hidden="true"></i>
+                            </div>
+                            <h3>AI Technology Design</h3>
+                            <p>Creating AI technologies that augment human capabilities rather than attempting to replace them.</p>
+                        </article>
+                        
+                        <article class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-handshake" aria-hidden="true"></i>
+                            </div>
+                            <h3>AI Acceptance</h3>
+                            <p>Understanding the factors that lead to effective adoption and sustained use of AI technologies in various contexts.</p>
+                        </article>
+                        
+                        <article class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-users" aria-hidden="true"></i>
+                            </div>
+                            <h3>Workforce Development</h3>
+                            <p>Designing comprehensive training programs that equip teams with the skills needed to work alongside advancing technologies.</p>
+                        </article>
+                        
+                        <article class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-sitemap" aria-hidden="true"></i>
+                            </div>
+                            <h3>Technology Integration</h3>
+                            <p>Creating seamless workflows that incorporate AI systems into existing organizational structures and processes.</p>
+                        </article>
+                    </div>
+                </section>
+                
+
             </div>
-        </div>
+        </main>
 
         <footer>
             <div class="footer-content">
-                <div class="footer-logo">
+                <div class="footer-logo" style="display: flex; align-items: center; gap: 0.5rem;">
                     <div class="footer-logo-img">
                         <img src="assets/images/logo-n.svg" alt="C Fjord Logo">
                     </div>
-                    C Fjord
+                    <span style="font-size: 1.3rem; font-weight: 600;">C Fjord</span>
                 </div>
                 <p>Bridge Divides Between Innovative Technology and Human Potential</p>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
                 <p class="copyright">© 2025 C Fjord Consulting. All rights reserved.</p>
             </div>
         </footer>
@@ -140,7 +236,10 @@
 
     <script>
         function toggleMenu() {
-            document.querySelector('.nav-links').classList.toggle('active');
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+            document.querySelector('.mobile-menu-btn').setAttribute('aria-expanded', 
+                navLinks.classList.contains('active') ? 'true' : 'false');
         }
     </script>
 </body>

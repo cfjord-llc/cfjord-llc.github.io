@@ -3,33 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - C Fjord</title>
+    <title>AI Integration & Human-AI Collaboration Blog | C Fjord Insights</title>
+    <meta name="description" content="Expert insights on human-centered AI integration, workforce development, and technology implementation strategies. Practical guidance for effective AI adoption.">
+    <meta name="keywords" content="AI integration blog, human-AI collaboration, workforce development, AI implementation, workplace culture, AI training">
+    <link rel="canonical" href="https://cfjord.com/blog.html">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cfjord.com/blog.html">
+    <meta property="og:title" content="AI Integration & Workforce Development Blog | C Fjord">
+    <meta property="og:description" content="Expert insights on human-centered AI integration, workforce development, and technology implementation strategies.">
+    <meta property="og:image" content="https://cfjord.com/assets/images/blog-og.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cfjord.com/blog.html">
+    <meta property="twitter:title" content="AI Integration & Workforce Development Blog | C Fjord">
+    <meta property="twitter:description" content="Expert insights on human-centered AI integration, workforce development, and technology implementation strategies.">
+    <meta property="twitter:image" content="https://cfjord.com/assets/images/blog-og.png">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "C Fjord Blog",
+      "description": "Expert insights on human-centered AI integration, workforce development, and technology implementation strategies.",
+      "url": "https://cfjord.com/blog.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "C Fjord",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://cfjord.com/assets/images/logo-n.svg"
+        }
+      },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "Rethinking Trust: Building Healthy AI-Human Relationships at Work",
+          "datePublished": "2025-06-26",
+          "author": {
+            "@type": "Person",
+            "name": "Christopher Flathmann"
+          },
+          "url": "https://cfjord.com/blog-posts/57-trust.html",
+          "mainEntityOfPage": "https://cfjord.com/blog-posts/57-trust.html"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Beyond the Launch: Why Human-Centered AI Monitoring Must Be Part of the Plan",
+          "datePublished": "2025-06-18",
+          "author": {
+            "@type": "Person",
+            "name": "Christopher Flathmann"
+          },
+          "url": "https://cfjord.com/blog-posts/56-monitoring.html",
+          "mainEntityOfPage": "https://cfjord.com/blog-posts/56-monitoring.html"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "From Tools to Teammates: Training for True Human-AI Collaboration",
+          "datePublished": "2025-06-10",
+          "author": {
+            "@type": "Person",
+            "name": "Christopher Flathmann"
+          },
+          "url": "https://cfjord.com/blog-posts/55-collaboration.html",
+          "mainEntityOfPage": "https://cfjord.com/blog-posts/55-collaboration.html"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="assets/images/fjord.png" alt="Fjord landscape" class="header-bg">
+            <img src="assets/images/fjord.png" alt="Mountain fjord landscape symbolizing bridging divides" class="header-bg">
             <div class="header-content">
                 <div class="logo" style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">
                     C Fjord
                 </div>
                 <div class="tagline">Bridge Divides Between Innovative Technology and Human Potential</div>
-                <a href="contact.html" class="header-cta">Connect With Us</a>
+                <a href="contact.html" class="header-cta" aria-label="Connect With Us">Connect With Us</a>
             </div>
         </header>
 
-        <nav>
+        <nav aria-label="Main Navigation">
             <div class="nav-container">
-                <a href="index.html" class="nav-logo">
+                <a href="index.html" class="nav-logo" aria-label="C Fjord Home">
                     <span class="nav-logo-img">
-                        <img src="assets/images/logo-n.svg" alt="C Fjord Logo">
+                        <img src="assets/images/logo-n.svg" alt="C Fjord Logo - Bridging technology and human potential">
                     </span>
                 </a>
-                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-                <div class="nav-links">
-                    <button class="close-menu-btn" onclick="toggleMenu()">✕</button>
+                <button class="mobile-menu-btn" onclick="toggleMenu()" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">☰</button>
+                <div class="nav-links" id="nav-links">
+                    <button class="close-menu-btn" onclick="toggleMenu()" aria-label="Close navigation menu">✕</button>
                     <a href="index.html" class="nav-btn">Home</a>
                     <a href="about.html" class="nav-btn">About</a>
                     <a href="services.html" class="nav-btn">Services</a>
@@ -39,115 +111,212 @@
             </div>
         </nav>
 
-        <div class="content">
+        <main class="content">
             <div id="blog" class="page active">
-                <div class="section-heading">
-                    <h1>Blog</h1>
-                </div>
+                <section class="blog-header-section">
+                    <div class="section-heading">
+                        <h1>AI Integration & Human Development Blog</h1>
+                    </div>
+                    
+                    <div class="blog-intro">
+                        <p>Insights, perspectives, and practical guidance on human-centered AI integration, workforce development, and technology implementation strategies. Explore our latest thinking on building effective AI-human partnerships.</p>
+                    </div>
+                </section>
+
+                <section class="blog-filter-section">
+                    <h2 class="visually-hidden">Blog Categories</h2>
+                    <div class="blog-filter" aria-label="Filter blog posts by category">
+                        <button class="filter-btn active" data-filter="all" aria-pressed="true">All Categories</button>
+                        <button class="filter-btn" data-filter="Training" aria-pressed="false">Training</button>
+                        <button class="filter-btn" data-filter="Workplace Culture" aria-pressed="false">Workplace Culture</button>
+                        <button class="filter-btn" data-filter="AI Integration" aria-pressed="false">AI Integration</button>
+                    </div>
+                </section>
+
+                <section class="blog-posts-section">
+                    <h2 class="visually-hidden">Blog Posts</h2>
+                    <div class="blog-grid">
+                        <!-- Blog Post 57: Trust -->
+                        <article class="blog-card" data-category="Workplace Culture">
+                            <div class="blog-content">
+                                <span class="blog-category">Workplace Culture</span>
+                                <div class="blog-date">June 26, 2025</div>
+                                <h3>Trust Goes Both Ways: Building Mutual Confidence Between Humans and AI</h3>
+                                <p>AI shouldn't be your oracle, nor your intern. It should be your teammate. Learn how to build balanced trust that goes both ways.</p>
+                                <a href="blog-posts/57-trust.html" class="blog-read-more" aria-label="Read more about building mutual trust between humans and AI">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 56: Monitoring -->
+                        <article class="blog-card" data-category="Training">
+                            <div class="blog-content">
+                                <span class="blog-category">Training</span>
+                                <div class="blog-date">June 18, 2025</div>
+                                <h3>Beyond the Launch: Why Human-Centered AI Monitoring Must Be Part of the Plan</h3>
+                                <p>AI isn't a set-it-and-forget-it technology. Learn how ongoing, human-centered monitoring ensures AI continues to serve your organization's needs.</p>
+                                <a href="blog-posts/56-monitoring.html" class="blog-read-more" aria-label="Read more about human-centered AI monitoring">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 55: Collaboration -->
+                        <article class="blog-card" data-category="Training">
+                            <div class="blog-content">
+                                <span class="blog-category">Training</span>
+                                <div class="blog-date">June 10, 2025</div>
+                                <h3>From Tools to Teammates: Training for True Human-AI Collaboration</h3>
+                                <p>The future of work isn't man versus machine—it's team versus challenge. Learn how to build effective human-AI collaboration.</p>
+                                <a href="blog-posts/55-collaboration.html" class="blog-read-more" aria-label="Read more about training for human-AI collaboration">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 54: Workflows -->
+                        <article class="blog-card" data-category="Training">
+                            <div class="blog-content">
+                                <span class="blog-category">Training</span>
+                                <div class="blog-date">May 31, 2025</div>
+                                <h3>Why Use Cases Come First: Building Better AI with Workflow-Driven Thinking</h3>
+                                <p>Don't start with algorithms—start with use cases. Discover how workflow-driven thinking leads to more successful AI implementations.</p>
+                                <a href="blog-posts/54-workflows.html" class="blog-read-more" aria-label="Read more about workflow-driven AI implementation">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 53: Training Prep -->
+                        <article class="blog-card" data-category="Training">
+                            <div class="blog-content">
+                                <span class="blog-category">Training</span>
+                                <div class="blog-date">May 21, 2025</div>
+                                <h3>Preparing People First: The Secret to Smooth AI Adoption</h3>
+                                <p>AI adoption is not a technology problem—it's a people problem. Learn how preparing your workforce leads to successful implementation.</p>
+                                <a href="blog-posts/53-trainprep.html" class="blog-read-more" aria-label="Read more about preparing people for AI adoption">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 52: Training -->
+                        <article class="blog-card" data-category="Training">
+                            <div class="blog-content">
+                                <span class="blog-category">Training</span>
+                                <div class="blog-date">May 11, 2025</div>
+                                <h3>The Missing Piece in AI Adoption: Why Workforce Training Is Non-Negotiable</h3>
+                                <p>No matter how good the tech gets, success still hinges on one thing: people. Discover our four-dimensional approach to AI training.</p>
+                                <a href="blog-posts/52-training.html" class="blog-read-more" aria-label="Read more about why workforce training is essential for AI adoption">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 51: Expectations -->
+                        <article class="blog-card" data-category="Workplace Culture">
+                            <div class="blog-content">
+                                <span class="blog-category">Workplace Culture</span>
+                                <div class="blog-date">May 1, 2025</div>
+                                <h3>What to Expect When You're Expecting to Work with an AI Technology</h3>
+                                <p>The teams that thrive aren't the ones who expect magic—they're the ones who show up ready to learn, iterate, and lead.</p>
+                                <a href="blog-posts/51-expect.html" class="blog-read-more" aria-label="Read more about expectations when working with AI technology">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 50: Atrophy -->
+                        <article class="blog-card" data-category="AI Integration">
+                            <div class="blog-content">
+                                <span class="blog-category">AI Integration</span>
+                                <div class="blog-date">April 21, 2025</div>
+                                <h3>Embrace Strategic Atrophy: Rethinking Skills in the Age of AI</h3>
+                                <p>In a world of exponential change, strategic atrophy is a superpower. Learn which skills to keep, evolve, or let fade.</p>
+                                <a href="blog-posts/50-atrophy.html" class="blog-read-more" aria-label="Read more about strategic skills atrophy in the age of AI">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 49: Acceptance -->
+                        <article class="blog-card" data-category="Workplace Culture">
+                            <div class="blog-content">
+                                <span class="blog-category">Workplace Culture</span>
+                                <div class="blog-date">April 11, 2025</div>
+                                <h3>AI Acceptance: More Than Just Usefulness</h3>
+                                <p>If your people don't accept the AI, they won't use it effectively. Learn how to foster true acceptance beyond just usefulness.</p>
+                                <a href="blog-posts/49-acceptance.html" class="blog-read-more" aria-label="Read more about fostering AI acceptance in the workplace">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 48: Build -->
+                        <article class="blog-card" data-category="AI Integration">
+                            <div class="blog-content">
+                                <span class="blog-category">AI Integration</span>
+                                <div class="blog-date">April 1, 2025</div>
+                                <h3>Build, Buy, or Blend? Finding the Right AI Strategy for Your Organization</h3>
+                                <p>The most resilient organizations don't lock themselves into one approach. Discover a flexible strategy for AI implementation.</p>
+                                <a href="blog-posts/48-build.html" class="blog-read-more" aria-label="Read more about AI implementation strategies: build, buy, or blend">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 47: Loop -->
+                        <article class="blog-card" data-category="AI Integration">
+                            <div class="blog-content">
+                                <span class="blog-category">AI Integration</span>
+                                <div class="blog-date">March 22, 2025</div>
+                                <h3>Rethinking Human-in-the-Loop: From Validation to Expertise</h3>
+                                <p>Rather than keeping humans in every loop, learn how to design systems that benefit from expertise within and around the loop.</p>
+                                <a href="blog-posts/47-loop.html" class="blog-read-more" aria-label="Read more about rethinking the human-in-the-loop approach">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 46: Awareness -->
+                        <article class="blog-card" data-category="Workplace Culture">
+                            <div class="blog-content">
+                                <span class="blog-category">Workplace Culture</span>
+                                <div class="blog-date">March 12, 2025</div>
+                                <h3>Why Awareness Is the Backbone of Human-AI Teams</h3>
+                                <p>Teams thrive when they see the big picture. Discover how to make transparency the norm in human-AI collaboration.</p>
+                                <a href="blog-posts/46-awareness.html" class="blog-read-more" aria-label="Read more about the importance of awareness in human-AI teams">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 45: Count -->
+                        <article class="blog-card" data-category="AI Integration">
+                            <div class="blog-content">
+                                <span class="blog-category">AI Integration</span>
+                                <div class="blog-date">March 2, 2025</div>
+                                <h3>How Much AI Is Too Much AI?</h3>
+                                <p>More AI doesn't always mean better results. Learn how to create balance and ensure AI complements human expertise.</p>
+                                <a href="blog-posts/45-count.html" class="blog-read-more" aria-label="Read more about finding the right balance of AI implementation">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 44: Complacency -->
+                        <article class="blog-card" data-category="Workplace Culture">
+                            <div class="blog-content">
+                                <span class="blog-category">Workplace Culture</span>
+                                <div class="blog-date">February 20, 2025</div>
+                                <h3>Complacency Isn't Inevitable: Rethinking AI Oversight Through Collaboration</h3>
+                                <p>As AI systems become more accurate, it's easy to mentally step back. Discover strategies to maintain meaningful human oversight.</p>
+                                <a href="blog-posts/44-Comp.html" class="blog-read-more" aria-label="Read more about avoiding complacency in AI oversight">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 43: Expert -->
+                        <article class="blog-card" data-category="Workplace Culture">
+                            <div class="blog-content">
+                                <span class="blog-category">Workplace Culture</span>
+                                <div class="blog-date">February 10, 2025</div>
+                                <h3>Building Expertise in the Age of AI: From Task Completion to Deep Understanding</h3>
+                                <p>AI can help complete tasks, but expertise requires deep understanding. Learn how to develop true expertise alongside AI.</p>
+                                <a href="blog-posts/43-expert.html" class="blog-read-more" aria-label="Read more about building expertise in the age of AI">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Post 42: Error -->
+                        <article class="blog-card" data-category="AI Integration">
+                            <div class="blog-content">
+                                <span class="blog-category">AI Integration</span>
+                                <div class="blog-date">February 1, 2025</div>
+                                <h3>When AI Gets It Wrong: Building a Culture of Shared Responsibility</h3>
+                                <p>Who's responsible when AI makes a mistake? Explore how to build a culture of shared responsibility for AI outcomes.</p>
+                                <a href="blog-posts/42-error.html" class="blog-read-more" aria-label="Read more about building a culture of shared responsibility for AI errors">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
                 
-                <div class="blog-intro">
-                    <p>Insights, perspectives, and practical guidance on human-centered AI integration, workforce development, and technology implementation strategies.</p>
-                </div>
 
-                <!-- Add category filter -->
-                <div class="blog-filter">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="Training">Training</button>
-                    <button class="filter-btn" data-filter="Workplace Culture">Workplace Culture</button>
-                    <button class="filter-btn" data-filter="AI Integration">AI Integration</button>
-                </div>
-
-                <div class="blog-grid">
-                    <!-- Blog Post 57: Trust -->
-                    <div class="blog-card" data-category="Workplace Culture">
-                        <div class="blog-content">
-                            <span class="blog-category">Workplace Culture</span>
-                            <div class="blog-date">June 25, 2025</div>
-                            <h3>Trust Goes Both Ways: Building Mutual Confidence Between Humans and AI</h3>
-                            <p>AI shouldn't be your oracle, nor your intern. It should be your teammate. Learn how to build balanced trust that goes both ways.</p>
-                            <a href="blog-posts/57-trust.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Blog Post 56: Monitoring -->
-                    <div class="blog-card" data-category="Training">
-                        <div class="blog-content">
-                            <span class="blog-category">Training</span>
-                            <div class="blog-date">June 19, 2025</div>
-                            <h3>Beyond the Launch: Why Human-Centered AI Monitoring Must Be Part of the Plan</h3>
-                            <p>AI isn't a set-it-and-forget-it technology. Learn how ongoing, human-centered monitoring ensures AI continues to serve your organization's needs.</p>
-                            <a href="blog-posts/56-monitoring.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Blog Post 55: Collaboration -->
-                    <div class="blog-card" data-category="Training">
-                        <div class="blog-content">
-                            <span class="blog-category">Training</span>
-                            <div class="blog-date">June 12, 2025</div>
-                            <h3>From Tools to Teammates: Training for True Human-AI Collaboration</h3>
-                            <p>The future of work isn't man versus machine—it's team versus challenge. Learn how to build effective human-AI collaboration.</p>
-                            <a href="blog-posts/55-collaboration.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Blog Post 54: Workflows -->
-                    <div class="blog-card" data-category="Training">
-                        <div class="blog-content">
-                            <span class="blog-category">Training</span>
-                            <div class="blog-date">June 5, 2025</div>
-                            <h3>Why Use Cases Come First: Building Better AI with Workflow-Driven Thinking</h3>
-                            <p>Don't start with algorithms—start with use cases. Discover how workflow-driven thinking leads to more successful AI implementations.</p>
-                            <a href="blog-posts/54-workflows.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Blog Post 53: Training Prep -->
-                    <div class="blog-card" data-category="Training">
-                        <div class="blog-content">
-                            <span class="blog-category">Training</span>
-                            <div class="blog-date">May 22, 2025</div>
-                            <h3>Preparing People First: The Secret to Smooth AI Adoption</h3>
-                            <p>AI adoption is not a technology problem—it's a people problem. Learn how preparing your workforce leads to successful implementation.</p>
-                            <a href="blog-posts/53-trainprep.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Blog Post 52: Training -->
-                    <div class="blog-card" data-category="Training">
-                        <div class="blog-content">
-                            <span class="blog-category">Training</span>
-                            <div class="blog-date">May 8, 2025</div>
-                            <h3>The Missing Piece in AI Adoption: Why Workforce Training Is Non-Negotiable</h3>
-                            <p>No matter how good the tech gets, success still hinges on one thing: people. Discover our four-dimensional approach to AI training.</p>
-                            <a href="blog-posts/52-training.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Blog Post 51: Expectations -->
-                    <div class="blog-card" data-category="Workplace Culture">
-                        <div class="blog-content">
-                            <span class="blog-category">Workplace Culture</span>
-                            <div class="blog-date">April 26, 2025</div>
-                            <h3>What to Expect When You're Expecting to Work with an AI Technology</h3>
-                            <p>The teams that thrive aren't the ones who expect magic—they're the ones who show up ready to learn, iterate, and lead.</p>
-                            <a href="blog-posts/51-expect.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Blog Post 50: Atrophy -->
-                    <div class="blog-card" data-category="AI Integration">
-                        <div class="blog-content">
-                            <span class="blog-category">AI Integration</span>
-                            <div class="blog-date">April 12, 2025</div>
-                            <h3>Embrace Strategic Atrophy: Rethinking Skills in the Age of AI</h3>
-                            <p>In a world of exponential change, strategic atrophy is a superpower. Learn which skills to keep, evolve, or let fade.</p>
-                            <a href="blog-posts/50-atrophy.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
+        </main>
 
         <footer>
             <div class="footer-content">
@@ -158,6 +327,12 @@
                     <span style="font-size: 1.3rem; font-weight: 600;">C Fjord</span>
                 </div>
                 <p>Bridge Divides Between Innovative Technology and Human Potential</p>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
                 <p class="copyright">© 2025 C Fjord Consulting. All rights reserved.</p>
             </div>
         </footer>
@@ -165,10 +340,13 @@
 
     <script>
         function toggleMenu() {
-            document.querySelector('.nav-links').classList.toggle('active');
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+            document.querySelector('.mobile-menu-btn').setAttribute('aria-expanded', 
+                navLinks.classList.contains('active') ? 'true' : 'false');
         }
         
-        // Blog filtering functionality
+        // Blog filtering functionality with improved accessibility
         document.addEventListener('DOMContentLoaded', function() {
             const filterBtns = document.querySelectorAll('.filter-btn');
             const blogCards = document.querySelectorAll('.blog-card');
@@ -177,10 +355,14 @@
             filterBtns.forEach(btn => {
                 btn.addEventListener('click', function() {
                     // Remove active class from all buttons
-                    filterBtns.forEach(b => b.classList.remove('active'));
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active');
+                        b.setAttribute('aria-pressed', 'false');
+                    });
                     
                     // Add active class to clicked button
                     this.classList.add('active');
+                    this.setAttribute('aria-pressed', 'true');
                     
                     const filterValue = this.getAttribute('data-filter');
                     
@@ -188,13 +370,42 @@
                     blogCards.forEach(card => {
                         if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
                             card.classList.remove('hidden');
+                            card.setAttribute('aria-hidden', 'false');
                         } else {
                             card.classList.add('hidden');
+                            card.setAttribute('aria-hidden', 'true');
                         }
                     });
+
+                    // Announce to screen readers how many posts are showing
+                    const visibleCount = document.querySelectorAll('.blog-card:not(.hidden)').length;
+                    const announcement = document.createElement('div');
+                    announcement.setAttribute('role', 'status');
+                    announcement.setAttribute('aria-live', 'polite');
+                    announcement.classList.add('visually-hidden');
+                    announcement.textContent = `Showing ${visibleCount} ${filterValue === 'all' ? 'total' : filterValue} blog posts`;
+                    document.body.appendChild(announcement);
+                    
+                    // Remove announcement after it's been read by screen readers
+                    setTimeout(() => {
+                        document.body.removeChild(announcement);
+                    }, 1000);
                 });
             });
         });
     </script>
+
+    <style>
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
 </body>
 </html>

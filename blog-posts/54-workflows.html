@@ -1,133 +1,303 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Why Use Cases Come First: Building Better AI with Workflow-Driven Thinking - C Fjord</title>
-<link href="../assets/css/styles.css" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Use Cases Come First: Building Better AI with Workflow-Driven Thinking | C Fjord</title>
+    <meta name="description" content="Learn why workflow-driven thinking and use case analysis are essential for successful AI implementation. Discover how to identify ideal workflows for AI integration.">
+    <meta name="keywords" content="AI workflows, workflow-driven thinking, AI use cases, AI implementation, AI strategy, AI integration, workplace AI, business AI">
+    <link rel="canonical" href="https://cfjord.com/blog-posts/54-workflows.html">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cfjord.com/blog-posts/54-workflows.html">
+    <meta property="og:title" content="Why Use Cases Come First: Building Better AI with Workflow-Driven Thinking">
+    <meta property="og:description" content="Learn why workflow-driven thinking and use case analysis are essential for successful AI implementation. Discover how to identify ideal workflows for AI integration.">
+    <meta property="og:image" content="https://cfjord.com/assets/images/blog-posts/workflow-thinking.jpg">
+    <meta property="article:published_time" content="2025-05-31">
+    <meta property="article:author" content="Christopher Flathmann">
+    <meta property="article:tag" content="AI Implementation">
+    <meta property="article:tag" content="Business Strategy">
+    <meta property="article:tag" content="Workflow Analysis">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cfjord.com/blog-posts/54-workflows.html">
+    <meta property="twitter:title" content="Why Use Cases Come First: Building Better AI with Workflow-Driven Thinking">
+    <meta property="twitter:description" content="Learn why workflow-driven thinking and use case analysis are essential for successful AI implementation. Discover how to identify ideal workflows for AI integration.">
+    <meta property="twitter:image" content="https://cfjord.com/assets/images/blog-posts/workflow-thinking.jpg">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Why Use Cases Come First: Building Better AI with Workflow-Driven Thinking",
+      "name": "Why Use Cases Come First: Building Better AI with Workflow-Driven Thinking",
+      "description": "Learn why workflow-driven thinking and use case analysis are essential for successful AI implementation. Discover how to identify ideal workflows for AI integration.",
+      "image": "https://cfjord.com/assets/images/blog-posts/workflow-thinking.jpg",
+      "datePublished": "2025-05-31",
+      "dateModified": "2025-05-31",
+      "author": {
+        "@type": "Person",
+        "name": "Christopher Flathmann",
+        "url": "https://cfjord.com/about.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "C Fjord",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://cfjord.com/assets/images/logo-n.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cfjord.com/blog-posts/54-workflows.html"
+      },
+      "keywords": ["AI workflows", "workflow-driven thinking", "AI use cases", "AI implementation", "AI strategy", "AI integration", "workplace AI", "business AI"]
+    }
+    </script>
 </head>
 <body>
-<div class="container">
-<header>
-<img alt="Fjord landscape" class="header-bg" src="../assets/images/fjord.png"/>
-<div class="header-content">
-<div class="logo" style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">
+    <div class="container">
+        <header>
+            <img src="../assets/images/fjord.png" alt="Mountain fjord landscape symbolizing bridging technological divides" class="header-bg">
+            <div class="header-content">
+                <div class="logo" style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">
                     C Fjord
                 </div>
-<div class="tagline">Bridge Divides Between Innovative Technology and Human Potential</div>
-<a class="header-cta" href="../contact.html">Connect With Us</a>
-</div>
-</header>
-<nav>
-<div class="nav-container">
-<a class="nav-logo" href="../index.html">
-<span class="nav-logo-img">
-<img alt="C Fjord Logo" src="../assets/images/logo-n.svg"/>
-</span>
-</a>
-<button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-<div class="nav-links">
-<button class="close-menu-btn" onclick="toggleMenu()">✕</button>
-<a class="nav-btn" href="../index.html">Home</a>
-<a class="nav-btn" href="../about.html">About</a>
-<a class="nav-btn" href="../services.html">Services</a>
-<a class="nav-btn active" href="../blog.html">Blog</a>
-<a class="nav-btn" href="../contact.html">Contact</a>
-</div>
-</div>
-</nav>
-<div class="content">
-<div class="blog-post">
-<div class="blog-navigation">
-<a class="back-to-blog" href="../blog.html"><i class="fas fa-arrow-left"></i> Back to Blog</a>
-</div>
-<div class="blog-header">
-<div class="blog-meta">
-    <div class="blog-date">June 5, 2025</div>
-    <div class="blog-author">By Christopher Flathmann</div>
-</div>
-<h1>Why Use Cases Come First: Building Better AI with Workflow-Driven Thinking</h1>
-</div>
+                <div class="tagline">Bridge Divides Between Innovative Technology and Human Potential</div>
+                <a href="../contact.html" class="header-cta" aria-label="Connect With Us">Connect With Us</a>
+            </div>
+        </header>
 
-<div class="blog-body">
-<p>Artificial intelligence is not magic. It’s not a silver bullet. And it definitely isn’t a one-size-fits-all solution. Yet you’d be surprised how many companies throw AI at problems without first understanding what they’re trying to solve.</p>
-<p>If we want AI to succeed in the workplace—not just technically, but culturally and operationally—we need a new approach. One that doesn’t start with algorithms or dashboards, but with <strong>use cases.</strong></p>
-<p>That’s what our second training program, <em>Identifying Ideal Workflows for AI Integration</em>, is all about. We teach your workforce how to spot the right opportunities for AI—not based on hype, but on actual work being done. It’s one of the smartest moves your organization can make.</p>
-<h2>The Case for Use Cases</h2>
-<p>It’s easy to get swept up in AI buzz. New tools launch every week, each promising to automate, optimize, and revolutionize your operations. But the question shouldn’t be “What can this AI do?” The real question is: <strong>“What are we trying to accomplish?”</strong></p>
-<p>That’s where workflows come in.</p>
-<p>Instead of plugging AI into random corners of the business, we start by mapping the actual tasks and processes that define your day-to-day operations. Then we break those tasks down—who does what, when, and how? What’s repetitive? What’s judgment-driven? What’s constrained by rules? What’s creative?</p>
-<p>Once you understand the anatomy of your workflows, AI becomes less of a guessing game and more of a strategic tool.</p>
-<h2>Teaching the Spectrum of Human and Computational Work</h2>
-<p>In our training, we introduce a simple but powerful framework: <strong>every function in a workflow can be plotted on a spectrum from human to computational.</strong></p>
-<ul>
-<li>On the far left: tasks requiring empathy, ethical reasoning, creativity, or cultural awareness.</li>
-<li>On the far right: tasks that are data-heavy, rules-based, and repetitive—ideal candidates for AI.</li>
-</ul>
-<p>We then draw a line across that spectrum. Everything on the computational side of the line is a potential AI use case.</p>
-<p>And here’s the key: <strong>that line moves.</strong></p>
-<p>As AI improves, it crosses into territory once reserved for humans. But by building out this full-spectrum map now, your workforce is ready. You’re not reacting—you’re adapting.</p>
-<h2>Empowering Workers, Not Replacing Them</h2>
-<p>One of the most empowering parts of this training is what it teaches your people about their own roles. Too often, AI is seen as a threat—something that will take jobs or make skills obsolete.</p>
-<p>But when workers help draw that spectrum, something shifts. They begin to see clearly:</p>
-<ul>
-<li>What AI can do (and should do)</li>
-<li>What AI shouldn’t do (yet or ever)</li>
-<li>What <em>they</em> do best—and where they create unique value</li>
-</ul>
-<p>That understanding doesn’t just reduce fear. It energizes teams. It frees people to focus their time and creativity on the human side of the line: the decisions, insights, and innovations that machines still struggle to replicate.</p>
-<h2>A Theoretical Example: Reimagining Workflow in Finance</h2>
-<p>Imagine a mid-sized finance department at a manufacturing firm. The team wants to explore how AI could support quarterly reporting. They participate in our training and begin by breaking the reporting process into discrete steps:</p>
-<ul>
-<li>Data collection from various departments</li>
-<li>Initial data cleaning and validation</li>
-<li>Drafting first-pass reports</li>
-<li>Strategic analysis and commentary</li>
-<li>Final presentation for leadership</li>
-</ul>
-<p>During the workshop, the team maps each step onto the human-computational spectrum. They realize that steps like data collection and initial cleaning fall well within current AI capabilities—structured, repeatable, and data-heavy. Drafting the first-pass report also shows potential for automation with large language models trained on past report formats.</p>
-<p>However, they identify the final two steps—analysis and leadership communication—as deeply human. These require business judgment, political awareness, and storytelling finesse that AI simply can’t replicate (yet).</p>
-<p>With that clarity, the team now has a roadmap: target automation for the early steps, and free up time for analysts to do deeper, more thoughtful work on the later stages.</p>
-<h2>Why This Training Matters Right Now</h2>
-<p>AI is advancing quickly. Generative tools can summarize reports, draft content, and even make suggestions. But without use case clarity, organizations are left with half-implemented pilots, frustrated teams, and missed opportunities.</p>
-<p>This training gives your workforce the mindset and tools to:</p>
-<ul>
-<li>Identify meaningful, high-ROI opportunities</li>
-<li>Avoid wasting resources on misaligned use cases</li>
-<li>Focus innovation where it actually matters</li>
-</ul>
-<p>The result is not just better AI—it’s better work.</p>
-<h2>Final Thought: AI That Fits, Not AI That Frustrates</h2>
-<p>If you want AI to stick in your organization, it needs to feel <em>useful</em>, not <em>imposed</em>. That only happens when you start with the actual work being done.</p>
-<p>Our <em>Identifying Ideal Workflows for AI Integration</em> training helps your people see where AI belongs—and where it doesn’t. It creates clarity, buy-in, and a sense of strategic direction that turns AI from a buzzword into a business asset.</p>
-<p>👉 <a href="mailto:chris@cfjord.com">Ready to bring this mindset to your team? Let’s talk.</a></p>
-</div>
-<div class="blog-contact">
-    <p>Looking to build AI solutions that truly address your workflow needs? <a href="../contact.html" target="_blank" rel="noopener noreferrer">Connect with us</a> to discuss workflow-driven approaches to AI implementation.</p>
-</div>
-<div class="blog-navigation">
-<a class="back-to-blog" href="../blog.html"><i class="fas fa-arrow-left"></i> Back to Blog</a>
-</div>
-</div>
-</div>
-<footer>
-<div class="footer-content">
-<div class="footer-logo" style="display: flex; align-items: center; gap: 0.5rem;">
-<div class="footer-logo-img">
-<img alt="C Fjord Logo" src="../assets/images/logo-n.svg"/>
-</div>
-<span style="font-size: 1.3rem; font-weight: 600;">C Fjord</span>
-</div>
-<p>Bridge Divides Between Innovative Technology and Human Potential</p>
-<p class="copyright">© 2025 C Fjord Consulting. All rights reserved.</p>
-</div>
-</footer>
-</div>
-<script>
+        <nav aria-label="Main Navigation">
+            <div class="nav-container">
+                <a href="../index.html" class="nav-logo" aria-label="C Fjord Home">
+                    <span class="nav-logo-img">
+                        <img src="../assets/images/logo-n.svg" alt="C Fjord Logo - Bridging technology and human potential">
+                    </span>
+                </a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">☰</button>
+                <div class="nav-links" id="nav-links">
+                    <button class="close-menu-btn" onclick="toggleMenu()" aria-label="Close navigation menu">✕</button>
+                    <a href="../index.html" class="nav-btn">Home</a>
+                    <a href="../about.html" class="nav-btn">About</a>
+                    <a href="../services.html" class="nav-btn">Services</a>
+                    <a href="../blog.html" class="nav-btn active">Blog</a>
+                    <a href="../contact.html" class="nav-btn">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="content">
+            <article class="blog-post">
+                <div class="blog-navigation" aria-label="Blog Navigation">
+                    <a href="../blog.html" class="back-to-blog" aria-label="Go back to main blog page"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Blog</a>
+                </div>
+                
+                    <div class="blog-meta">
+                        <time class="blog-date" datetime="2025-05-31">May 31, 2025</time>
+                        <div class="blog-author">By <a href="../about.html" rel="author">Christopher Flathmann</a></div>
+                        <div class="blog-tags">
+                            <span class="tag">AI Strategy</span>
+                            <span class="tag">Workflow Analysis</span>
+                        </div>
+                    </div>
+                    <h1>Why Use Cases Come First: Building Better AI with Workflow-Driven Thinking</h1>
+
+                
+
+
+                <div class="table-of-contents">
+                    <h2>In this article:</h2>
+                    <ul>
+                        <li><a href="#introduction">Introduction: Beyond the AI Hype</a></li>
+                        <li><a href="#case-for-use-cases">The Case for Use Cases</a></li>
+                        <li><a href="#spectrum">Teaching the Spectrum of Human and Computational Work</a></li>
+                        <li><a href="#empowering">Empowering Workers, Not Replacing Them</a></li>
+                        <li><a href="#example">A Theoretical Example: Reimagining Workflow in Finance</a></li>
+                        <li><a href="#why-matters">Why This Training Matters Right Now</a></li>
+                        <li><a href="#conclusion">Final Thought: AI That Fits, Not AI That Frustrates</a></li>
+                    </ul>
+                </div>
+
+                <section id="introduction" class="blog-section">
+                    <p>Artificial intelligence is not magic. It's not a silver bullet. And it definitely isn't a one-size-fits-all solution. Yet you'd be surprised how many companies throw AI at problems without first understanding what they're trying to solve.</p>
+
+                    <p>If we want AI to succeed in the workplace—not just technically, but culturally and operationally—we need a new approach. One that doesn't start with algorithms or dashboards, but with <strong>use cases.</strong></p>
+
+                    <p>That's what our second training program, <em>Identifying Ideal Workflows for AI Integration</em>, is all about. We teach your workforce how to spot the right opportunities for AI—not based on hype, but on actual work being done. It's one of the smartest moves your organization can make.</p>
+                    
+                    <div class="blog-callout">
+                        <blockquote>
+                            <p>Successful AI implementation starts with understanding the workflows you want to improve—not with the technology itself.</p>
+                        </blockquote>
+                    </div>
+                </section>
+                
+                <section id="case-for-use-cases" class="blog-section">
+                    <h2>The Case for Use Cases</h2>
+                    <p>It's easy to get swept up in AI buzz. New tools launch every week, each promising to automate, optimize, and revolutionize your operations. But the question shouldn't be "What can this AI do?" The real question is: <strong>"What are we trying to accomplish?"</strong></p>
+
+                    <p>That's where workflows come in.</p>
+
+                    <p>Instead of plugging AI into random corners of the business, we start by mapping the actual tasks and processes that define your day-to-day operations. Then we break those tasks down—who does what, when, and how? What's repetitive? What's judgment-driven? What's constrained by rules? What's creative?</p>
+
+                    <p>Once you understand the anatomy of your workflows, AI becomes less of a guessing game and more of a strategic tool.</p>
+                </section>
+                
+                <section id="spectrum" class="blog-section">
+                    <h2>Teaching the Spectrum of Human and Computational Work</h2>
+                    <p>In our training, we introduce a simple but powerful framework: <strong>every function in a workflow can be plotted on a spectrum from human to computational.</strong></p>
+
+                    <ul>
+                        <li>On the far left: tasks requiring empathy, ethical reasoning, creativity, or cultural awareness.</li>
+                        <li>On the far right: tasks that are data-heavy, rules-based, and repetitive—ideal candidates for AI.</li>
+                    </ul>
+
+                    <p>We then draw a line across that spectrum. Everything on the computational side of the line is a potential AI use case.</p>
+
+                    <p>And here's the key: <strong>that line moves.</strong></p>
+
+                    <p>As AI improves, it crosses into territory once reserved for humans. But by building out this full-spectrum map now, your workforce is ready. You're not reacting—you're adapting.</p>
+                </section>
+                
+                <section id="empowering" class="blog-section">
+                    <h2>Empowering Workers, Not Replacing Them</h2>
+                    <p>One of the most empowering parts of this training is what it teaches your people about their own roles. Too often, AI is seen as a threat—something that will take jobs or make skills obsolete.</p>
+
+                    <p>But when workers help draw that spectrum, something shifts. They begin to see clearly:</p>
+
+                    <ul class="blog-list">
+                        <li><strong>What AI can do (and should do)</strong> - Identifying the repetitive, data-intensive tasks ideal for automation</li>
+                        <li><strong>What AI shouldn't do (yet or ever)</strong> - Recognizing where human judgment and creativity remain essential</li>
+                        <li><strong>What <em>they</em> do best</strong> - Understanding their unique value in the human-AI partnership</li>
+                    </ul>
+
+                    <p>That understanding doesn't just reduce fear. It energizes teams. It frees people to focus their time and creativity on the human side of the line: the decisions, insights, and innovations that machines still struggle to replicate.</p>
+                    
+                    <div class="blog-callout">
+                        <blockquote>
+                            <p>When employees participate in mapping their workflows, they stop seeing AI as a threat and start seeing it as a tool that enhances their most valuable work.</p>
+                        </blockquote>
+                    </div>
+                </section>
+                
+                <section id="example" class="blog-section">
+                    <h2>A Theoretical Example: Reimagining Workflow in Finance</h2>
+                    <p>Imagine a mid-sized finance department at a manufacturing firm. The team wants to explore how AI could support quarterly reporting. They participate in our training and begin by breaking the reporting process into discrete steps:</p>
+
+                    <ul>
+                        <li>Data collection from various departments</li>
+                        <li>Initial data cleaning and validation</li>
+                        <li>Drafting first-pass reports</li>
+                        <li>Strategic analysis and commentary</li>
+                        <li>Final presentation for leadership</li>
+                    </ul>
+
+                    <p>During the workshop, the team maps each step onto the human-computational spectrum. They realize that steps like data collection and initial cleaning fall well within current AI capabilities—structured, repeatable, and data-heavy. Drafting the first-pass report also shows potential for automation with large language models trained on past report formats.</p>
+
+                    <p>However, they identify the final two steps—analysis and leadership communication—as deeply human. These require business judgment, political awareness, and storytelling finesse that AI simply can't replicate (yet).</p>
+
+                    <p>With that clarity, the team now has a roadmap: target automation for the early steps, and free up time for analysts to do deeper, more thoughtful work on the later stages.</p>
+                </section>
+                
+                <section id="why-matters" class="blog-section">
+                    <h2>Why This Training Matters Right Now</h2>
+                    <p>AI is advancing quickly. Generative tools can summarize reports, draft content, and even make suggestions. But without use case clarity, organizations are left with half-implemented pilots, frustrated teams, and missed opportunities.</p>
+
+                    <p>This training gives your workforce the mindset and tools to:</p>
+
+                    <ul>
+                        <li>Identify meaningful, high-ROI opportunities</li>
+                        <li>Avoid wasting resources on misaligned use cases</li>
+                        <li>Focus innovation where it actually matters</li>
+                    </ul>
+
+                    <p>The result is not just better AI—it's better work.</p>
+                </section>
+                
+                <section id="conclusion" class="blog-section conclusion">
+                    <h2>Final Thought: AI That Fits, Not AI That Frustrates</h2>
+                    <p>If you want AI to stick in your organization, it needs to feel <em>useful</em>, not <em>imposed</em>. That only happens when you start with the actual work being done.</p>
+
+                    <p>Our <em>Identifying Ideal Workflows for AI Integration</em> training helps your people see where AI belongs—and where it doesn't. It creates clarity, buy-in, and a sense of strategic direction that turns AI from a buzzword into a business asset.</p>
+                </section>
+
+                <div class="blog-contact">
+                    <h3>Take the Next Step</h3>
+                    <p>Ready to bring workflow-driven AI thinking to your organization? <a href="../contact.html" aria-label="Contact C Fjord about workflow analysis training">Contact us</a> to learn more about our "Identifying Ideal Workflows for AI Integration" training program.</p>
+                </div>
+                
+                <div class="blog-author-bio">
+                    <img src="../assets/images/square.jpg" alt="Dr. Christopher Flathmann" class="author-image" loading="lazy">
+                    <div class="author-details">
+                        <h3>About the Author</h3>
+                        <p><strong>Dr. Christopher Flathmann</strong> is the founder of C Fjord and specializes in human-centered AI integration and workforce development. With extensive experience in both academia and industry consulting, he helps organizations bridge the gap between innovative technology and human potential.</p>
+                        <a href="../about.html" class="author-link" aria-label="Learn more about Dr. Christopher Flathmann">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="related-posts">
+                    <h3>Related Articles</h3>
+                    <div class="related-grid">
+                        <a href="53-trainprep.html" class="related-post" aria-label="Read related post about AI workforce preparation">
+                            <span class="related-title">Preparing People First: The Secret to Smooth AI Adoption</span>
+                        </a>
+                        <a href="52-training.html" class="related-post" aria-label="Read related post about AI workforce training">
+                            <span class="related-title">The Missing Piece in AI Adoption: Why Workforce Training Is Non-Negotiable</span>
+                        </a>
+                        <a href="48-build.html" class="related-post" aria-label="Read related post about AI implementation strategies">
+                            <span class="related-title">Build, Buy, or Blend? Finding the Right AI Strategy for Your Organization</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="blog-navigation bottom-nav" aria-label="Blog Navigation">
+                    <a href="../blog.html" class="back-to-blog" aria-label="Go back to main blog page"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Blog</a>
+                    <div class="post-navigation">
+                        <a href="53-trainprep.html" class="prev-post" aria-label="Read previous article about AI workforce preparation">
+                            <i class="fas fa-chevron-left" aria-hidden="true"></i> Previous: Preparing People First
+                        </a>
+                        <a href="55-collaboration.html" class="next-post" aria-label="Read next article about human-AI collaboration">
+                            Next: Creating Effective Human-AI Collaborations <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo" style="display: flex; align-items: center; gap: 0.5rem;">
+                    <div class="footer-logo-img">
+                        <img src="../assets/images/logo-n.svg" alt="C Fjord Logo">
+                    </div>
+                    <span style="font-size: 1.3rem; font-weight: 600;">C Fjord</span>
+                </div>
+                <p>Bridge Divides Between Innovative Technology and Human Potential</p>
+                <div class="footer-links">
+                    <a href="../about.html">About</a>
+                    <a href="../services.html">Services</a>
+                    <a href="../blog.html">Blog</a>
+                    <a href="../contact.html">Contact</a>
+                </div>
+                <p class="copyright">© 2025 C Fjord Consulting. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
         function toggleMenu() {
-            document.querySelector('.nav-links').classList.toggle('active');
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+            document.querySelector('.mobile-menu-btn').setAttribute('aria-expanded', 
+                navLinks.classList.contains('active') ? 'true' : 'false');
         }
     </script>
 </body>

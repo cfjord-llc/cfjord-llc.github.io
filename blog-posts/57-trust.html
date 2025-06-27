@@ -1,134 +1,327 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Blog Post Title - C Fjord</title>
-<link href="../assets/css/styles.css" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rethinking Trust: Building Healthy AI-Human Relationships at Work | C Fjord</title>
+    <meta name="description" content="Learn how to build balanced, two-way trust between AI systems and humans in the workplace. Discover strategies for fostering healthy AI-human relationships.">
+    <meta name="keywords" content="AI trust, human-AI relationship, AI at work, trust calibration, responsible AI, AI collaboration, AI-human teams, bidirectional trust">
+    <link rel="canonical" href="https://cfjord.com/blog-posts/57-trust.html">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cfjord.com/blog-posts/57-trust.html">
+    <meta property="og:title" content="Rethinking Trust: Building Healthy AI-Human Relationships at Work">
+    <meta property="og:description" content="Learn how to build balanced, two-way trust between AI systems and humans in the workplace. Discover strategies for fostering healthy AI-human relationships.">
+    <meta property="og:image" content="https://cfjord.com/assets/images/blog-posts/ai-trust.jpg">
+    <meta property="article:published_time" content="2025-06-26">
+    <meta property="article:author" content="Christopher Flathmann">
+    <meta property="article:tag" content="AI Trust">
+    <meta property="article:tag" content="Responsible AI">
+    <meta property="article:tag" content="Human-AI Collaboration">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cfjord.com/blog-posts/57-trust.html">
+    <meta property="twitter:title" content="Rethinking Trust: Building Healthy AI-Human Relationships at Work">
+    <meta property="twitter:description" content="Learn how to build balanced, two-way trust between AI systems and humans in the workplace. Discover strategies for fostering healthy AI-human relationships.">
+    <meta property="twitter:image" content="https://cfjord.com/assets/images/blog-posts/ai-trust.jpg">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Rethinking Trust: Building Healthy AI-Human Relationships at Work",
+      "name": "Rethinking Trust: Building Healthy AI-Human Relationships at Work",
+      "description": "Learn how to build balanced, two-way trust between AI systems and humans in the workplace. Discover strategies for fostering healthy AI-human relationships.",
+      "image": "https://cfjord.com/assets/images/blog-posts/ai-trust.jpg",
+      "datePublished": "2025-06-26",
+      "dateModified": "2025-06-26",
+      "author": {
+        "@type": "Person",
+        "name": "Christopher Flathmann",
+        "url": "https://cfjord.com/about.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "C Fjord",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://cfjord.com/assets/images/logo-n.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cfjord.com/blog-posts/57-trust.html"
+      },
+      "keywords": ["AI trust", "human-AI relationship", "AI at work", "trust calibration", "responsible AI", "AI collaboration", "AI-human teams", "bidirectional trust"]
+    }
+    </script>
 </head>
 <body>
-<div class="container">
-<header>
-<img alt="Fjord landscape" class="header-bg" src="../assets/images/fjord.png"/>
-<div class="header-content">
-<div class="logo" style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">
+    <div class="container">
+        <header>
+            <img src="../assets/images/fjord.png" alt="Mountain fjord landscape symbolizing bridging technological divides" class="header-bg">
+            <div class="header-content">
+                <div class="logo" style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">
                     C Fjord
                 </div>
-<div class="tagline">Bridge Divides Between Innovative Technology and Human Potential</div>
-<a class="header-cta" href="../contact.html">Connect With Us</a>
-</div>
-</header>
-<nav>
-<div class="nav-container">
-<a class="nav-logo" href="../index.html">
-<span class="nav-logo-img">
-<img alt="C Fjord Logo" src="../assets/images/logo-n.svg"/>
-</span>
-</a>
-<button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-<div class="nav-links">
-<button class="close-menu-btn" onclick="toggleMenu()">✕</button>
-<a class="nav-btn" href="../index.html">Home</a>
-<a class="nav-btn" href="../about.html">About</a>
-<a class="nav-btn" href="../services.html">Services</a>
-<a class="nav-btn active" href="../blog.html">Blog</a>
-<a class="nav-btn" href="../contact.html">Contact</a>
-</div>
-</div>
-</nav>
-<div class="content">
-<div class="blog-post">
-<div class="blog-navigation">
-<a class="back-to-blog" href="../blog.html"><i class="fas fa-arrow-left"></i> Back to Blog</a>
-</div>
-<div class="blog-header">
-<div class="blog-meta">
-    <div class="blog-date">June 25, 2025</div>
-    <div class="blog-author">By Christopher Flathmann</div>
-</div>
-<h1>Rethinking Trust: Building Healthy AI-Human Relationships at Work</h1>
-</div>
+                <div class="tagline">Bridge Divides Between Innovative Technology and Human Potential</div>
+                <a href="../contact.html" class="header-cta" aria-label="Connect With Us">Connect With Us</a>
+            </div>
+        </header>
 
-<div class="blog-body">
-<p><strong>By Dr. Christopher Flathmann</strong></p>
-<p>Trust is a foundational piece of every working relationship—and that includes our relationship with AI.</p>
-<p>In my work with organizations navigating the shift toward human-AI collaboration, I’ve seen firsthand that successful AI adoption doesn’t start with the tech. It starts with people. If workers don’t trust the tools, they won’t use them. But just as critically, if they trust the tools too much, they’ll use them in ways they shouldn’t.</p>
-<p>And yet, the conversation around trust in AI is stuck in a one-way street. We keep asking how to get humans to trust AI. But rarely do we ask: How does AI learn to trust us?</p>
-<p>It’s time to rethink what trust really means in the age of collaborative intelligence.</p>
-<h2>Trust Is the Glue—But It Can Also Be the Crack</h2>
-<p>It’s easy to assume that more trust is always better. But in practice, too much trust can be just as dangerous as too little.</p>
-<p>Think of the classic GPS horror stories: drivers who followed directions into a lake or onto a closed road because “the GPS said so.” These are not just cautionary tales about inattentiveness—they’re warnings about overtrust. When we trust a system more than we should, we stop thinking critically. And that’s where mistakes happen.</p>
-<p>On the flip side, when trust is too low, people avoid AI entirely. A perfectly capable forecasting tool might sit unused because staff don't believe it reflects real-world nuance. Productivity stalls, and value is lost—not because the AI was broken, but because the trust was.</p>
-<p>Healthy AI adoption means finding the right <em>calibration</em> of trust. Not blind faith, not total skepticism—but a dynamic, mutual relationship built on experience, feedback, and context.</p>
-<h2>Why One-Way Trust Is a Problem</h2>
-<p>When we talk about trust in AI, we usually frame it as a human decision: <em>Do I trust this system? Should I?</em></p>
-<p>But for many systems—especially those that interact with people in real time—AI also has to make decisions about whether to trust <em>us</em>. Think of a self-driving car: if a passenger suddenly takes the wheel, the car must decide whether to yield control. That decision hinges on a form of machine-to-human trust.</p>
-<p>Another example: AI customer support tools that escalate issues based on human emotion or intent. If the AI "trusts" that a customer is being honest or serious, it routes the case differently. It may even alter its tone or vocabulary.</p>
-<p>Trust here isn’t just about belief—it’s about <em>how decisions are made</em> and <em>how responsibility is shared</em>. If trust only flows in one direction, the relationship is unbalanced. And in complex work environments, imbalance equals risk.</p>
-<h2>Building Bi-Directional Trust</h2>
-<p>So, what does a healthy AI-human trust relationship look like?</p>
-<p><strong>When humans trust AI:</strong></p>
-<ul>
-<li>They feel confident delegating routine tasks.</li>
-<li>They understand the AI’s strengths—and its limits.</li>
-<li>They know when to override or double-check.</li>
-</ul>
-<p><strong>When AI "trusts" humans:</strong></p>
-<ul>
-<li>It adapts to their behavior and preferences.</li>
-<li>It incorporates human corrections as meaningful feedback.</li>
-<li>It builds models that treat user input as informative, not noise.</li>
-</ul>
-<p>This bidirectional dynamic mirrors what we expect in human teams. You trust your coworkers more over time as they demonstrate reliability. You might ask for clarity if something sounds off. You update your behavior based on how they respond. The same logic should apply to AI teammates.</p>
-<h2>How Businesses Can Foster Healthy Trust</h2>
-<p>Here are a few steps organizations can take to promote well-calibrated trust:</p>
-<p><strong>1. Design for Transparency</strong><br/>
-Make it easy for people to see <em>why</em> an AI made a decision. Use explainable AI techniques or build interfaces that allow for user inspection.</p>
-<p><strong>2. Create Feedback Loops</strong><br/>
-When AI makes a mistake, humans should be able to correct it—and those corrections should influence future behavior. It’s not enough for AI to make suggestions; it needs to <em>listen</em> too.</p>
-<p><strong>3. Teach Trust Literacy</strong><br/>
-Help employees understand what AI is good at (pattern recognition, speed, scale) and what it struggles with (context, nuance, values). Build training around <em>when</em> to trust—not just <em>how</em> to use.</p>
-<p><strong>4. Monitor Trust Levels</strong><br/>
-Conduct regular check-ins. Are users overtrusting the AI? Avoiding it completely? Use these insights to guide training, support, or system redesign.</p>
-<p><strong>5. Let AI Learn from the Human Team</strong><br/>
-Instead of forcing humans to adapt to rigid AI systems, create tools that adapt to the way your people work. A little flexibility from AI can build a lot of trust.</p>
-<h2>The Goal Isn’t Perfect Trust—It’s Smart Trust</h2>
-<p>The best teams aren’t built on unconditional trust. They’re built on earned confidence, consistent communication, and mutual respect.</p>
-<p>AI shouldn’t be your oracle, nor your intern. It should be your <em>teammate</em>. And just like with human teammates, you’ll trust it in some areas, question it in others, and constantly learn how to work together more effectively.</p>
-<h2>Next Steps for Leaders</h2>
-<ul>
-<li><strong>Audit</strong> where trust currently exists in your organization’s AI tools—who uses what, and how confidently?</li>
-<li><strong>Identify</strong> overtrust and undertrust risks. Are any systems being overrelied on? Or underused?</li>
-<li><strong>Begin conversations</strong> about AI trusting humans. What assumptions are your AI tools making about human behavior, input, or reliability?</li>
-</ul>
-<p>Trust isn’t just a technical problem. It’s a cultural one. And the organizations that figure it out—those who build mutual trust between people and their AI teammates—will be the ones best positioned for the future.</p>
-<div class="blog-contact">
-        <p>Want to build more balanced trust between your team and AI systems? <a href="../contact.html" target="_blank" rel="noopener noreferrer">Contact us</a> to discuss creating mutual confidence in your human-AI partnership.</p>
+        <nav aria-label="Main Navigation">
+            <div class="nav-container">
+                <a href="../index.html" class="nav-logo" aria-label="C Fjord Home">
+                    <span class="nav-logo-img">
+                        <img src="../assets/images/logo-n.svg" alt="C Fjord Logo - Bridging technology and human potential">
+                    </span>
+                </a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">☰</button>
+                <div class="nav-links" id="nav-links">
+                    <button class="close-menu-btn" onclick="toggleMenu()" aria-label="Close navigation menu">✕</button>
+                    <a href="../index.html" class="nav-btn">Home</a>
+                    <a href="../about.html" class="nav-btn">About</a>
+                    <a href="../services.html" class="nav-btn">Services</a>
+                    <a href="../blog.html" class="nav-btn active">Blog</a>
+                    <a href="../contact.html" class="nav-btn">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="content">
+            <article class="blog-post">
+                <div class="blog-navigation" aria-label="Blog Navigation">
+                    <a href="../blog.html" class="back-to-blog" aria-label="Go back to main blog page"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Blog</a>
+                </div>
+                
+                    <div class="blog-meta">
+                        <time class="blog-date" datetime="2025-06-26">June 26, 2025</time>
+                        <div class="blog-author">By <a href="../about.html" rel="author">Christopher Flathmann</a></div>
+                        <div class="blog-tags">
+                            <span class="tag">AI Trust</span>
+                            <span class="tag">Human-AI Collaboration</span>
+                        </div>
+                    </div>
+                    <h1>Rethinking Trust: Building Healthy AI-Human Relationships at Work</h1>
+
+                
+
+
+                <div class="table-of-contents">
+                    <h2>In this article:</h2>
+                    <ul>
+                        <li><a href="#introduction">Introduction: Trust as a Foundation</a></li>
+                        <li><a href="#trust-glue">Trust Is the Glue—But It Can Also Be the Crack</a></li>
+                        <li><a href="#one-way-trust">Why One-Way Trust Is a Problem</a></li>
+                        <li><a href="#bidirectional-trust">Building Bi-Directional Trust</a></li>
+                        <li><a href="#foster-trust">How Businesses Can Foster Healthy Trust</a></li>
+                        <li><a href="#smart-trust">The Goal Isn't Perfect Trust—It's Smart Trust</a></li>
+                        <li><a href="#next-steps">Next Steps for Leaders</a></li>
+                    </ul>
+                </div>
+
+                <div class="blog-body">
+                    <section id="introduction" class="blog-section">
+                        <p>Trust is a foundational piece of every working relationship—and that includes our relationship with AI.</p>
+
+                        <p>In my work with organizations navigating the shift toward human-AI collaboration, I've seen firsthand that successful AI adoption doesn't start with the tech. It starts with people. If workers don't trust the tools, they won't use them. But just as critically, if they trust the tools too much, they'll use them in ways they shouldn't.</p>
+
+                        <p>And yet, the conversation around trust in AI is stuck in a one-way street. We keep asking how to get humans to trust AI. But rarely do we ask: <strong>How does AI learn to trust us?</strong></p>
+
+                        <p>It's time to rethink what trust really means in the age of collaborative intelligence.</p>
+                        
+                        <div class="blog-callout">
+                            <blockquote>
+                                <p>True human-AI partnership requires trust to flow in both directions—not just humans trusting AI systems, but AI systems designed to appropriately "trust" human input.</p>
+                            </blockquote>
+                        </div>
+                    </section>
+                    
+                    <section id="trust-glue" class="blog-section">
+                        <h2>Trust Is the Glue—But It Can Also Be the Crack</h2>
+
+                        <p>It's easy to assume that more trust is always better. But in practice, too much trust can be just as dangerous as too little.</p>
+
+                        <p>Think of the classic GPS horror stories: drivers who followed directions into a lake or onto a closed road because "the GPS said so." These are not just cautionary tales about inattentiveness—they're warnings about overtrust. When we trust a system more than we should, we stop thinking critically. And that's where mistakes happen.</p>
+
+                        <p>On the flip side, when trust is too low, people avoid AI entirely. A perfectly capable forecasting tool might sit unused because staff don't believe it reflects real-world nuance. Productivity stalls, and value is lost—not because the AI was broken, but because the trust was.</p>
+
+                        <p>Healthy AI adoption means finding the right <em>calibration</em> of trust. Not blind faith, not total skepticism—but a dynamic, mutual relationship built on experience, feedback, and context.</p>
+                    </section>
+                    
+                    <section id="one-way-trust" class="blog-section">
+                        <h2>Why One-Way Trust Is a Problem</h2>
+
+                        <p>When we talk about trust in AI, we usually frame it as a human decision: <em>Do I trust this system? Should I?</em></p>
+
+                        <p>But for many systems—especially those that interact with people in real time—AI also has to make decisions about whether to trust <em>us</em>. Think of a self-driving car: if a passenger suddenly takes the wheel, the car must decide whether to yield control. That decision hinges on a form of machine-to-human trust.</p>
+
+                        <p>Another example: AI customer support tools that escalate issues based on human emotion or intent. If the AI "trusts" that a customer is being honest or serious, it routes the case differently. It may even alter its tone or vocabulary.</p>
+
+                        <p>Trust here isn't just about belief—it's about <em>how decisions are made</em> and <em>how responsibility is shared</em>. If trust only flows in one direction, the relationship is unbalanced. And in complex work environments, imbalance equals risk.</p>
+                    </section>
+                    
+                    <section id="bidirectional-trust" class="blog-section">
+                        <h2>Building Bi-Directional Trust</h2>
+
+                        <p>So, what does a healthy AI-human trust relationship look like?</p>
+
+                        <div class="trust-comparison">
+                            <div class="trust-human">
+                                <h3>When humans trust AI:</h3>
+                                <ul>
+                                    <li>They feel confident delegating routine tasks</li>
+                                    <li>They understand the AI's strengths—and its limits</li>
+                                    <li>They know when to override or double-check</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="trust-ai">
+                                <h3>When AI "trusts" humans:</h3>
+                                <ul>
+                                    <li>It adapts to their behavior and preferences</li>
+                                    <li>It incorporates human corrections as meaningful feedback</li>
+                                    <li>It builds models that treat user input as informative, not noise</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <p>This bidirectional dynamic mirrors what we expect in human teams. You trust your coworkers more over time as they demonstrate reliability. You might ask for clarity if something sounds off. You update your behavior based on how they respond. The same logic should apply to AI teammates.</p>
+                    </section>
+                    
+                    <section id="foster-trust" class="blog-section">
+                        <h2>How Businesses Can Foster Healthy Trust</h2>
+
+                        <p>Here are a few steps organizations can take to promote well-calibrated trust:</p>
+
+                        <div class="trust-steps">
+                            <div class="trust-step">
+                                <h3>1. Design for Transparency</h3>
+                                <p>Make it easy for people to see <em>why</em> an AI made a decision. Use explainable AI techniques or build interfaces that allow for user inspection.</p>
+                            </div>
+                            
+                            <div class="trust-step">
+                                <h3>2. Create Feedback Loops</h3>
+                                <p>When AI makes a mistake, humans should be able to correct it—and those corrections should influence future behavior. It's not enough for AI to make suggestions; it needs to <em>listen</em> too.</p>
+                            </div>
+                            
+                            <div class="trust-step">
+                                <h3>3. Teach Trust Literacy</h3>
+                                <p>Help employees understand what AI is good at (pattern recognition, speed, scale) and what it struggles with (context, nuance, values). Build training around <em>when</em> to trust—not just <em>how</em> to use.</p>
+                            </div>
+                            
+                            <div class="trust-step">
+                                <h3>4. Monitor Trust Levels</h3>
+                                <p>Conduct regular check-ins. Are users overtrusting the AI? Avoiding it completely? Use these insights to guide training, support, or system redesign.</p>
+                            </div>
+                            
+                            <div class="trust-step">
+                                <h3>5. Let AI Learn from the Human Team</h3>
+                                <p>Instead of forcing humans to adapt to rigid AI systems, create tools that adapt to the way your people work. A little flexibility from AI can build a lot of trust.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-callout">
+                            <blockquote>
+                                <p>Building trust isn't just about convincing humans to accept AI—it's about designing AI systems that know when to trust human judgment and when to provide helpful guidance.</p>
+                            </blockquote>
+                        </div>
+                    </section>
+                    
+                    <section id="smart-trust" class="blog-section">
+                        <h2>The Goal Isn't Perfect Trust—It's Smart Trust</h2>
+
+                        <p>The best teams aren't built on unconditional trust. They're built on earned confidence, consistent communication, and mutual respect.</p>
+
+                        <p>AI shouldn't be your oracle, nor your intern. It should be your <em>teammate</em>. And just like with human teammates, you'll trust it in some areas, question it in others, and constantly learn how to work together more effectively.</p>
+                    </section>
+                    
+                    <section id="next-steps" class="blog-section conclusion">
+                        <h2>Next Steps for Leaders</h2>
+
+                        <ul class="action-steps">
+                            <li><strong>Audit</strong> where trust currently exists in your organization's AI tools—who uses what, and how confidently?</li>
+                            <li><strong>Identify</strong> overtrust and undertrust risks. Are any systems being overrelied on? Or underused?</li>
+                            <li><strong>Begin conversations</strong> about AI trusting humans. What assumptions are your AI tools making about human behavior, input, or reliability?</li>
+                        </ul>
+
+                        <p>Trust isn't just a technical problem. It's a cultural one. And the organizations that figure it out—those who build mutual trust between people and their AI teammates—will be the ones best positioned for the future.</p>
+                    </section>
+                </div>
+
+                <div class="blog-contact">
+                    <h3>Take the Next Step</h3>
+                    <p>Want to build more balanced trust between your team and AI systems? <a href="../contact.html" aria-label="Contact C Fjord about building AI-human trust">Contact us</a> to discuss creating mutual confidence in your human-AI partnership.</p>
+                </div>
+                
+                <div class="blog-author-bio">
+                    <img src="../assets/images/square.jpg" alt="Dr. Christopher Flathmann" class="author-image" loading="lazy">
+                    <div class="author-details">
+                        <h3>About the Author</h3>
+                        <p><strong>Dr. Christopher Flathmann</strong> is the founder of C Fjord and specializes in human-centered AI integration and workforce development. With extensive experience in both academia and industry consulting, he helps organizations bridge the gap between innovative technology and human potential.</p>
+                        <a href="../about.html" class="author-link" aria-label="Learn more about Dr. Christopher Flathmann">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="related-posts">
+                    <h3>Related Articles</h3>
+                    <div class="related-grid">
+                        <a href="56-monitoring.html" class="related-post" aria-label="Read related post about AI monitoring">
+                            <span class="related-title">Beyond the Launch: Why Human-Centered AI Monitoring Must Be Part of the Plan</span>
+                        </a>
+                        <a href="55-collaboration.html" class="related-post" aria-label="Read related post about human-AI collaboration">
+                            <span class="related-title">From Tools to Teammates: Training for True Human-AI Collaboration</span>
+                        </a>
+                        <a href="54-workflows.html" class="related-post" aria-label="Read related post about AI workflow integration">
+                            <span class="related-title">Why Use Cases Come First: Building Better AI with Workflow-Driven Thinking</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="blog-navigation bottom-nav" aria-label="Blog Navigation">
+                    <a href="../blog.html" class="back-to-blog" aria-label="Go back to main blog page"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Blog</a>
+                    <div class="post-navigation">
+                        <a href="56-monitoring.html" class="prev-post" aria-label="Read previous article about AI monitoring">
+                            <i class="fas fa-chevron-left" aria-hidden="true"></i> Previous: Beyond the Launch
+                        </a>
+
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo" style="display: flex; align-items: center; gap: 0.5rem;">
+                    <div class="footer-logo-img">
+                        <img src="../assets/images/logo-n.svg" alt="C Fjord Logo">
+                    </div>
+                    <span style="font-size: 1.3rem; font-weight: 600;">C Fjord</span>
+                </div>
+                <p>Bridge Divides Between Innovative Technology and Human Potential</p>
+                <div class="footer-links">
+                    <a href="../about.html">About</a>
+                    <a href="../services.html">Services</a>
+                    <a href="../blog.html">Blog</a>
+                    <a href="../contact.html">Contact</a>
+                </div>
+                <p class="copyright">© 2025 C Fjord Consulting. All rights reserved.</p>
+            </div>
+        </footer>
     </div>
-</div>
-<div class="blog-navigation">
-<a class="back-to-blog" href="../blog.html"><i class="fas fa-arrow-left"></i> Back to Blog</a>
-</div>
-</div>
-</div>
-<footer>
-<div class="footer-content">
-<div class="footer-logo" style="display: flex; align-items: center; gap: 0.5rem;">
-<div class="footer-logo-img">
-<img alt="C Fjord Logo" src="../assets/images/logo-n.svg"/>
-</div>
-<span style="font-size: 1.3rem; font-weight: 600;">C Fjord</span>
-</div>
-<p>Bridge Divides Between Innovative Technology and Human Potential</p>
-<p class="copyright">© 2025 C Fjord Consulting. All rights reserved.</p>
-</div>
-</footer>
-</div>
-<script>
+
+    <script>
         function toggleMenu() {
-            document.querySelector('.nav-links').classList.toggle('active');
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+            document.querySelector('.mobile-menu-btn').setAttribute('aria-expanded', 
+                navLinks.classList.contains('active') ? 'true' : 'false');
         }
     </script>
 </body>

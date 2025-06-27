@@ -3,33 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - C Fjord</title>
+    <title>Contact C Fjord | AI Integration & Human-AI Training Consultancy</title>
+    <meta name="description" content="Connect with C Fjord to discuss human-centered AI integration, workforce training, and technology implementation for your organization. Get a complimentary discovery call.">
+    <meta name="keywords" content="contact C Fjord, AI consultation, human-AI training, AI integration services, technology implementation">
+    <link rel="canonical" href="https://cfjord.com/contact.html">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cfjord.com/contact.html">
+    <meta property="og:title" content="Contact C Fjord Consulting">
+    <meta property="og:description" content="Connect with C Fjord to discuss AI integration and technology implementation for your organization.">
+    <meta property="og:image" content="https://cfjord.com/assets/images/contact-og.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cfjord.com/contact.html">
+    <meta property="twitter:title" content="Contact C Fjord Consulting">
+    <meta property="twitter:description" content="Connect with C Fjord to discuss AI integration and technology implementation for your organization.">
+    <meta property="twitter:image" content="https://cfjord.com/assets/images/contact-og.png">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact C Fjord",
+      "description": "Connect with C Fjord to discuss human-centered AI integration and workforce training services.",
+      "url": "https://cfjord.com/contact.html",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "C Fjord",
+        "email": "chris@cfjord.com",
+        "url": "https://cfjord.com",
+        "logo": "https://cfjord.com/assets/images/logo-n.svg",
+        "sameAs": [
+          "https://www.linkedin.com/company/cfjord"
+        ]
+      }
+    }
+    </script>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="assets/images/fjord.png" alt="Fjord landscape" class="header-bg">
+            <img src="assets/images/fjord.png" alt="Mountain fjord landscape symbolizing bridging divides" class="header-bg">
             <div class="header-content">
                 <div class="logo" style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">
                     C Fjord
                 </div>
                 <div class="tagline">Bridge Divides Between Innovative Technology and Human Potential</div>
-                <a href="contact.html" class="header-cta">Connect With Us</a>
+                <a href="contact.html" class="header-cta" aria-label="Connect With Us">Connect With Us</a>
             </div>
         </header>
 
-        <nav>
+        <nav aria-label="Main Navigation">
             <div class="nav-container">
-                <a href="index.html" class="nav-logo">
+                <a href="index.html" class="nav-logo" aria-label="C Fjord Home">
                     <span class="nav-logo-img">
-                        <img src="assets/images/logo-n.svg" alt="C Fjord Logo">
+                        <img src="assets/images/logo-n.svg" alt="C Fjord Logo - Bridging technology and human potential">
                     </span>
                 </a>
-                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-                <div class="nav-links">
-                    <button class="close-menu-btn" onclick="toggleMenu()">✕</button>
+                <button class="mobile-menu-btn" onclick="toggleMenu()" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">☰</button>
+                <div class="nav-links" id="nav-links">
+                    <button class="close-menu-btn" onclick="toggleMenu()" aria-label="Close navigation menu">✕</button>
                     <a href="index.html" class="nav-btn">Home</a>
                     <a href="about.html" class="nav-btn">About</a>
                     <a href="services.html" class="nav-btn">Services</a>
@@ -39,54 +78,92 @@
             </div>
         </nav>
 
-        <div class="content">
+        <main class="content">
             <div class="contact-container">
                 <div class="contact-header">
                     <h1>Let's Connect</h1>
-                    <div class="subtitle">I'm excited to hear about your organization and how we might work together</div>
+                    <p class="subtitle">I'm excited to hear about your organization and how we might work together</p>
                 </div>
                 
-                <div class="contact-card">
+                <section class="contact-card">
                     <div class="email-section">
-                        <div class="email-heading">The best way to reach me:</div>
+                        <h2 class="email-heading">The best way to reach me:</h2>
                         <div class="email-container">
-                            <a href="mailto:chris@cfjord.com" class="email-link">chris@cfjord.com</a>
+                            <a href="mailto:chris@cfjord.com" class="email-link" aria-label="Email Chris at C Fjord">chris@cfjord.com</a>
                         </div>
-                        <div class="contact-cta">
+                        <p class="contact-cta">
                             I typically respond within 1-2 business days and look forward to our conversation.
-                        </div>
+                        </p>
                     </div>
                     
-                    <!-- Single highlight box (removed approach box) -->
                     <div class="highlight-box">
                         <div class="box-icon">
-                            <i class="fas fa-lightbulb"></i>
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
                         </div>
                         <div class="box-content">
                             <h3>Initial Consultation</h3>
                             <p>All new inquiries begin with a complimentary discovery call to understand your specific needs and determine how C Fjord can best support your organization.</p>
                         </div>
                     </div>
+                </section>
+
+                <section class="contact-topics">
+                    <h2>How Can I Help Your Organization?</h2>
                     
-                    <!--
-                    <div class="contact-message">
-                        <p>Thank you for your interest in C Fjord. I'm always excited to connect with organizations looking to navigate the evolving landscape of AI and technology implementation.</p>
+                    <div class="topics-grid">
+                        <article class="topic-card">
+                            <div class="topic-icon">
+                                <i class="fas fa-robot" aria-hidden="true"></i>
+                            </div>
+                            <h3>AI Integration Strategy</h3>
+                            <p>Discuss developing a custom approach to integrating AI technologies with your existing workforce and processes.</p>
+                        </article>
                         
-                        <p>Whether you have questions about my services, want to discuss a potential collaboration, or simply wish to learn more about human-centered AI approaches, I'd be delighted to hear from you.</p>
-                    </div>-->
-                </div>
+                        <article class="topic-card">
+                            <div class="topic-icon">
+                                <i class="fas fa-users" aria-hidden="true"></i>
+                            </div>
+                            <h3>Workforce Training</h3>
+                            <p>Explore comprehensive training programs to help your team work effectively alongside AI technologies.</p>
+                        </article>
+                        
+                        <article class="topic-card">
+                            <div class="topic-icon">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </div>
+                            <h3>AI Opportunity Audit</h3>
+                            <p>Identify specific areas where AI implementation could have the most significant positive impact in your organization.</p>
+                        </article>
+                        
+                        <article class="topic-card">
+                            <div class="topic-icon">
+                                <i class="fas fa-comment" aria-hidden="true"></i>
+                            </div>
+                            <h3>Speaking Engagements</h3>
+                            <p>Inquire about availability for keynotes, workshops, or panel discussions on human-AI collaboration.</p>
+                        </article>
+                    </div>
+                </section>
+
+                
             </div>
-        </div>
+        </main>
 
         <footer>
             <div class="footer-content">
-                <div class="footer-logo">
+                <div class="footer-logo" style="display: flex; align-items: center; gap: 0.5rem;">
                     <div class="footer-logo-img">
                         <img src="assets/images/logo-n.svg" alt="C Fjord Logo">
                     </div>
-                    C Fjord
+                    <span style="font-size: 1.3rem; font-weight: 600;">C Fjord</span>
                 </div>
                 <p>Bridge Divides Between Innovative Technology and Human Potential</p>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
                 <p class="copyright">© 2025 C Fjord Consulting. All rights reserved.</p>
             </div>
         </footer>
@@ -94,7 +171,10 @@
 
     <script>
         function toggleMenu() {
-            document.querySelector('.nav-links').classList.toggle('active');
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+            document.querySelector('.mobile-menu-btn').setAttribute('aria-expanded', 
+                navLinks.classList.contains('active') ? 'true' : 'false');
         }
     </script>
 </body>

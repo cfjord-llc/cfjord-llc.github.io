@@ -3,31 +3,37 @@
   <!-- Main Pages -->
   <url>
     <loc>https://cfjord.com/</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://cfjord.com/about.html</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cfjord.com/services.html</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cfjord.com/approach.html</loc>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog.html</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cfjord.com/contact.html</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -35,97 +41,97 @@
   <!-- Blog Posts -->
   <url>
     <loc>https://cfjord.com/blog-posts/57-trust.html</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog-posts/56-monitoring.html</loc>
-    <lastmod>2025-06-18</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog-posts/55-collaboration.html</loc>
-    <lastmod>2025-06-10</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog-posts/54-workflows.html</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog-posts/53-trainprep.html</loc>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog-posts/52-training.html</loc>
-    <lastmod>2025-05-11</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog-posts/51-expect.html</loc>
-    <lastmod>2025-05-01</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog-posts/50-atrophy.html</loc>
-    <lastmod>2025-04-21</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog-posts/49-acceptance.html</loc>
-    <lastmod>2025-04-11</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog-posts/48-build.html</loc>
-    <lastmod>2025-04-01</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog-posts/47-loop.html</loc>
-    <lastmod>2025-03-22</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog-posts/46-awareness.html</loc>
-    <lastmod>2025-03-12</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog-posts/45-count.html</loc>
-    <lastmod>2025-03-02</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog-posts/44-Comp.html</loc>
-    <lastmod>2025-02-20</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog-posts/43-expert.html</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cfjord.com/blog-posts/42-error.html</loc>
-    <lastmod>2025-02-01</lastmod>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
